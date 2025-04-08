@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MovieNerd</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" href="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f913.png">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Hind:wght@700&family=Nunito:wght@400;700&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <header id="header">
+            <button onclick="location.href='index.html'" class="logo">
+                <h1 class="logo-text">
+                    <span>Movie</span>
+                    <span class="green-text">Nerd</span>
+                </h1>
+                <img class="emoji" src="https://images.emojiterra.com/google/noto-emoji/v2.034/512px/1f913.png" alt="Nerd emoji">
+            </button>
+            <input type="text" placeholder="Search for a movie" onkeydown="doSearch(event)" class="search-input">
+        </header>
+        <main>
+            <div class="sub-title">
+                <h2 class="sub-title-text">Your reliable informative website about movies all around the world!</h2>
+                <img class="winking-emoji" src="assets/nerdWinkingFace.jpg" alt="nerd winking">
+            </div>
+
+            <div class="movie-list">
+
+            </div>
+            <nav class="page-nav">
+                <p class="now-page">
+                    <span>Page</span>
+                    <span class="currentPage"></span>
+                </p>
+                <ol>
+                    <li><button class="previous-page-btn" onclick="previousPage(), location.href='index.html#header'">Previous Page</button></li>
+                    <li><input class="page-number" type="number" onkeydown="getPage(event)" min="1" max="500" placeholder="Page"></li>
+                    <li><button class="next-page-btn" onclick="nextPage(), location.href='index.html#header'">Next Page</button></li>
+                </ol>
+            </nav>
+        </main>
+        <footer>
+            <p>API powered by:</p>
+            <button onclick="window.open('https://www.themoviedb.org/?language=pt-BR', '_blank')">
+                <img src="assets/Tmd-logo.png" alt="TMDB logo">
+            </button>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>

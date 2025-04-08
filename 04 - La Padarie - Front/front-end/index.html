@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Padarie</title>
+        <link rel="icon" href="assets/baguette.png">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <img src="assets/logo.svg" alt="Logo da panificadora la Padarie">
+        </header>
+        <main>
+            <section class="info-section">
+                <div class="info-container">
+                    <div class="info-title">
+                        <p>Pessoas na fila</p>
+                        <img src="assets/peopleIcon.svg" alt="Símbolo de pessoas">
+                    </div>
+                    <span class="people-queue"></span>
+                </div>
+                <div class="info-container">
+                    <div class="info-title">
+                        <p>Pães vendidos</p>
+                        <img src="assets/troleIcon.svg" alt="Símbolo de carrinho de compras">
+                    </div>
+                    <span class="breads-sold"></span>
+                </div>
+                <div class="info-container" id="brown-info">
+                    <div class="info-title">
+                        <p class="white-text">Entrada</p>
+                        <img src="assets/moneyIcon.svg" alt="Símbolo de dinheiro">
+                    </div>
+                    <span class="cost"></span>
+                </div>
+            </section>
+            <section class="queue-section">
+                <button class="add-button" onclick="toggleForm()">+ Adicionar pessoa a fila</button>
+                <div class="form-bg"></div>
+                <form></form>
+                <div class="queue"></div>
+            </section>
+        </main>
+        <footer>Com 💛 Info Jr UFBA 2022</footer>
+        <script src="script.js"></script>
+    </body>
+
+</html>

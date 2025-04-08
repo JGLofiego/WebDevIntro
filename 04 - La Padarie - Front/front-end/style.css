@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    font-family: 'Poppins';
+    outline: none;
+}
+
+body {
+    background-color: #E5CF94;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 80px;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #965A1B;
+    padding: 80px 0 181px 0;
+    margin-bottom: 4.7vh;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0 0 5.5vh 0;
+    font-size: 14px;
+}
+
+main {
+    padding: 0 17.85vw;
+    height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+form {
+    position: absolute;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    top: 366px;
+    background-color: white;
+    padding: 30px;
+    width: 31.5vw;
+    height: 347px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 1001;
+}
+
+input {
+    padding: 16px 25px;
+    border-radius: 5px;
+    background-color: #F5F5F5;
+    -moz-appearance: textfield;
+}
+
+.info-title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px 25px;
+    width: 100%;
+}
+
+.people-queue {
+    font-size: 36px;
+}
+
+.breads-sold {
+    font-size: 36px;
+}
+
+.cost {
+    font-size: 36px;
+    color: white;
+}
+
+.info-section {
+    position: absolute;
+    display: flex;
+    gap: 25px;
+    margin: 0 auto 0 auto;
+    left: 0;
+    right: 0;
+    width: 64.3%;
+    top: 305px;
+}
+
+.brown-text {
+    font-weight: 700;
+    font-size: 16px;
+    color: #5F3305;
+}
+
+.white-text {
+    color: white;
+}
+
+.add-button {
+    align-self: start;
+    font-weight: 700;
+    font-size: 16px;
+    color: #5F3305;
+}
+
+.add-button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.title-input {
+    display: flex;
+    flex-direction: column;
+    gap: 1.74vh;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.11vh;
+}
+
+.send-button {
+    padding: 18px 0;
+    background-color: #5F3305;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.cancel-button {
+    padding: 18px 0;
+    border: 1px solid #DB1E1E;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.send-button:hover {
+    background-color: #b15f07;
+    transition: 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #DB1E1E;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+.error-message {
+    color: #DB1E1E;
+}
+
+.queue-section {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.queue {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.queue-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFFCC;
+    border-radius: 5px;
+    padding: 15px;
+    color: #5F3305;
+}
+
+.queue-element {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.queue-info {
+    display: flex;
+    gap: 15px;
+}
+
+.minor-font {
+    font-size: 12px;
+}
+
+.delete-button:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.form-bg {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #E5CF9480;
+    z-index: 1000;
+}
+
+#brown-info {
+    background-color: #5F3305;
+}
+
+@media (max-width: 1010px) {
+    .info-section {
+        width: 70vw;
+    }
+}
+
+@media (max-width:940px) {
+    .info-section {
+        width: 75vw;
+    }
+}
+
+@media (max-width:878px) {
+    .info-section {
+        width: 80vw;
+    }
+}
+
+@media (max-width:802px) {
+    .info-section {
+        width: 85vw;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        gap: 436px;
+    }
+    header {
+        padding: 80px 0 181px 0;
+    }
+    main {
+        padding: 0 23px;
+    }
+    form {
+        width: inherit;
+        top: 301px;
+        left: 23px;
+        right: 23px;
+        height: 457px;
+        width: inherit;
+    }
+    .info-section {
+        flex-direction: column;
+        gap: 25px;
+        margin: 0 auto 0 auto;
+        left: 23px;
+        right: 23px;
+        width: inherit;
+        top: 303px;
+    }
+    .info-container {
+        width: inherit;
+    }
+    .queue-section {
+        gap: 5px;
+    }
+    .queue {
+        gap: 22px;
+    }
+    .queue-info {
+        flex-direction: column;
+        gap: 0;
+    }
+    .button-container {
+        flex-direction: column;
+    }
+    .brown-text {
+        align-self: center;
+    }
+}
