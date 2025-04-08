@@ -1,6 +1,6 @@
 # Núcleo Web - InfoJr UFBA
 
-Repositório dedicado às atividades realizadas no núcleo de Web Development da InfoJr UFBA, onde aprendi desde conceitos básicos até intermediários de desenvolvimento web.
+Repositório dedicado às atividades realizadas no núcleo de Web Development da InfoJr UFBA em 2022, onde aprendi desde conceitos básicos até intermediários de desenvolvimento web.
 
 ## 🚀 Atividades Realizadas
 
