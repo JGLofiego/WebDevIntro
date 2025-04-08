@@ -1,0 +1,429 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Be Vietnam Pro';
+    list-style: none;
+}
+
+html {
+    --wht: #FFFFFF;
+    --blk: #202020;
+    --blackCheckboxBorder: #3C3B3A;
+    --blue: #0065FF;
+    --approvalColor: #F8F9FA;
+    --whtHDesktop: #FFFFFF;
+    --blkHDesktop: #3C3B3A;
+    --checkboxBG: #E5E5E5;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--wht);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6.7%;
+    box-shadow: 0px 25px 65px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    background-color: var(--wht);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    padding: 6.7%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    transition: 0.3s;
+}
+
+input[type=checkbox] {
+    appearance: none;
+    display: flex;
+    padding: 0px 1.5px;
+}
+
+input[type=checkbox]::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    background: #3C3B3A;
+    border-radius: 100%;
+    align-self: center;
+    transition: 0.3s;
+}
+
+input[type=checkbox]:checked::before {
+    align-self: center;
+    transform: translateX(18px);
+    transition: 0.3s;
+}
+
+button {
+    outline: inherit;
+    background: none;
+    cursor: pointer;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+p {
+    padding-left: 4vw;
+    color: var(--blk);
+    font-size: 17px;
+}
+
+h4 {
+    color: var(--blk);
+    font-size: 20px;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+a:hover {
+    color: aqua;
+    transition: 0.3s;
+}
+
+.darkmode-container {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.header-title {
+    font-size: 20px;
+    color: var(--blk);
+}
+
+.darkmode-text {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--blk);
+}
+
+.darkmode-button {
+    display: block;
+    width: 39px;
+    height: 21px;
+    border: 1px solid var(--blackCheckboxBorder);
+    background-color: var(--checkboxBG);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.darkmode-button:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.nav-img:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.img-near-text1 {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.section-limiter {
+    width: 100%;
+    height: 1px;
+    background-color: var(--blue);
+    display: block;
+}
+
+.apresentation-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.apresentation-text1 {
+    font-family: 'EB Garamond';
+    font-size: 32px;
+    color: var(--blue);
+}
+
+.intro-description {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.approval-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: 86.6%;
+    gap: 10px;
+    background-color: var(--approvalColor);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.approval-text {
+    font-size: 12px;
+}
+
+.site-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-title {
+    color: var(--blue);
+}
+
+.content-button {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    padding: 16px;
+    width: 95%;
+    border-radius: 45.5px;
+    margin-top: 15px;
+}
+
+.content-button:hover {
+    background-color: var(--blue);
+    color: var(--wht);
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.title-sub-but {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.title-sub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.section1 {
+    gap: 40px;
+}
+
+.section2 {
+    gap: 25px;
+}
+
+.section3 {
+    gap: 25px;
+}
+
+.icons:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+}
+
+.nav-section {
+    flex-direction: column;
+    gap: 3.4vh;
+    position: absolute;
+    width: 86.6%;
+    top: 35vh;
+}
+
+.nav-social {
+    justify-content: space-between;
+    position: absolute;
+    width: 76.6%;
+    right: 11.7%;
+    top: calc(35vh + 40vh);
+}
+
+#slsmaller {
+    width: 51.2vw;
+    margin-bottom: 19px;
+}
+
+#slbigger {
+    margin-top: 25px;
+}
+
+#nav-button {
+    align-self: flex-start;
+}
+
+#nav-section {
+    display: none;
+}
+
+#nav-social {
+    display: none;
+}
+
+#nav-section.active {
+    display: flex;
+    align-items: center;
+}
+
+#nav-social.active {
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    ul {
+        display: flex;
+    }
+    li {
+        font-size: 14px;
+        color: var(--blue);
+    }
+    main {
+        padding: 0px 17% 40px 17%;
+        align-items: flex-start;
+        gap: 80px;
+    }
+    body {
+        gap: 50px;
+    }
+    header {
+        padding: 30px 6%;
+        background-color: var(--whtHDesktop);
+    }
+    section {
+        align-items: flex-start;
+    }
+    p {
+        padding-left: 0vw;
+    }
+    .left-side-h {
+        display: flex;
+        align-items: center;
+        gap: 3.5vw;
+    }
+    .apresentation-text1 {
+        font-size: 70px;
+    }
+    .right-side-h {
+        display: flex;
+        align-items: center;
+        gap: 3.5vw;
+    }
+    .nav-section {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.4vw;
+        top: 0vw;
+        width: inherit;
+    }
+    .nav-social {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        top: 0vw;
+        width: inherit;
+        gap: 2.1vw;
+        margin-top: 0px;
+    }
+    .apresentation-text {
+        align-items: flex-start;
+    }
+    .section2 {
+        gap: 46px;
+    }
+    .approval-container {
+        width: 462px;
+        margin-bottom: 0;
+    }
+    .img-near-text1 {
+        flex-direction: row;
+        gap: 2.8vw;
+    }
+    .title-sub-but {
+        align-items: flex-start;
+    }
+    .title-sub {
+        align-items: flex-start;
+        gap: 36px;
+    }
+    .content-button {
+        width: 15vw;
+    }
+    .site-image {
+        width: 200%;
+    }
+    .section3 {
+        gap: 36px;
+    }
+    .section4 {
+        flex-direction: row-reverse;
+        gap: 2.8vw;
+    }
+    #slsmaller {
+        width: 13.3vw;
+    }
+    #slbigger {
+        margin-bottom: 44px;
+        margin-top: 0;
+    }
+    #nav-button {
+        display: none;
+    }
+    #nav-section {
+        position: static;
+        display: flex;
+    }
+    #nav-social {
+        display: flex;
+    }
+    @media (max-width: 1124px) {
+        .img-near-text1 {
+            align-items: flex-start;
+        }
+        .content-button {
+            width: 100%;
+        }
+        .title-sub-but {
+            size: 100%;
+        }
+        @media (max-width: 810px) {
+            .nav-buttons {
+                font-size: 12px;
+            }
+            .left-side-h {
+                gap: 2.5vw;
+            }
+            .apresentation-text1 {
+                font-size: 69px;
+            }
+        }
+    }
+}

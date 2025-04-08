@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    border: none;
+}
+
+h1 {
+    display: flex;
+    font-size: 48px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 27px 15px;
+}
+
+a {
+    color: inherit;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    list-style: none;
+    font-weight: 700;
+}
+
+button {
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 15px;
+    color: #1C4701;
+    background-color: #7ED321;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 44px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 200px;
+    gap: 30px;
+}
+
+h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 48px;
+}
+
+section {
+    display: flex;
+}
+
+input {
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #9F9F9F;
+    outline: none;
+}
+
+form {
+    display: flex;
+    gap: 20px;
+}
+
+div {
+    display: flex;
+}
+
+.posts-containers {
+    align-items: flex-start;
+    gap: 23px;
+}
+
+.post-text {
+    width: 778px;
+}
+
+.título-text {
+    font-size: 32px;
+}
+
+#inscrever-container {
+    padding: 9px 32px;
+    background: rgba(126, 211, 33, 0.4);
+}
+
+#green-text {
+    color: #7ED321;
+    background-color: aqua;
+}
+
+#inscrever-se-container {
+    padding: 13px 55px;
+    width: 220px;
+}
+
+#quem-somos-container {
+    padding: 30px 377px;
+    flex-direction: column;
+    gap: 14px;
+}
+
+#quem-somos-text {
+    width: 687px;
+}
+
+#blog-container {
+    flex-direction: column;
+    gap: 45px;
+}
+
+#inscrever2-container {
+    padding: 9px 32px;
+}
+
+#inscricao-main {
+    padding: 61px 160px;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#inputs-container {
+    gap: 20px;
+    width: 419px;
+}
+
+#titles-input-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 37px;
+}
+
+#titulo-2-linhas {
+    width: 124px;
+}
+
+#ama-cachorros {
+    flex-direction: column;
+    align-items: center;
+}
+
+#long-input {
+    padding-bottom: 129px;
+}
+
+#botao-enviar {
+    border-radius: 10px;
+    width: 141px;
+    padding: 10px 45px;
+    align-self: flex-end;
+}

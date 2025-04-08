@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>João Gabriel</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;700&family=EB+Garamond:wght@700&display=swap');
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="left-side-h">
+                <h2 class="header-title">João Gabriel</h2>
+                <nav id="nav-section">
+                    <ul class="nav-section">
+                        <li class="nav-buttons"><a onclick="toggleMenu()" href="index.html#section-2">Seção dois</a></li>
+                        <li class="nav-buttons"><a onclick="toggleMenu()" href="index.html#section-3">Seção três</a></li>
+                        <li class="nav-buttons"><a onclick="toggleMenu()" href="index.html#section-4">Seção quatro</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-side-h">
+                <nav id="nav-social">
+                    <ul class="nav-social">
+                        <li><button onclick="window.open('https://twitter.com/NAcontecendo', '_blank'), toggleMenu()"><img class="icons" name="twitter-icon" src="assets/images/twitter.svg" alt="Logo do Twitter"></button></li>
+                        <li><button onclick="window.open('https://www.figma.com/file/m51hxPh7T2yRX58k1xbdh3/Dark-Mode-%E2%80%93-N%C3%BAcleo-Web?node-id=0%3A1', '_blank')"><img class="icons" name="figma-icon" src="assets/images/figma.svg" alt=" Logo do Figma"></button></li>
+                        <li><button onclick="window.open('https://www.instagram.com/j_gabriel.ls/', '_blank')"><img class="icons" name="instagram-icon" src="assets/images/instagram.svg" alt="Logo do Instagram"></button></li>
+                    </ul>
+                </nav>
+                <div class="darkmode-container">
+                    <h3 class="darkmode-text">Dark mode:</h3>
+                    <input class="darkmode-button" type="checkbox" onchange="changeMode()">
+                </div>
+            </div>
+        </header>
+        <main>
+            <nav id="nav-button">
+                <button onclick="toggleMenu()"><img class="nav-img" src="assets/images/navButton.svg" alt="Botão de navegação"></button>
+            </nav>
+            <section class="section1">
+                <img class="avatar" src="assets/images/avatar.jpg" alt="Avatar de João Gabriel">
+                <h2 class="apresentation-text">
+                    <span class="apresentation-text1">Olá.</span>
+                    <span class="apresentation-text1">Meu nome é João.</span>
+                </h2>
+            </section>
+            <section class="section2" id="section-2">
+                <div class="section-limiter" id="slsmaller"></div>
+                <p class="intro-description">
+                    <span>
+                        Sou graduando em ciência da computação na UFBA - Sempre crescendo, nunca parando, foguete não tem ré! :D
+                    </span>
+                    <span>
+                        Agora, estou no Pluginfo adquirindo conhecimentos web para aumentar ainda mais minha experiência. Já conheci várias pessoas legais e simpáticas, sem contar que participei de atividades da diretoria de marketing. Estou ansioso pra o próximo exercício (apesar que esse foi um pouquinho difícil kkkkk) e sempre buscando aprender mais!
+                    </span>
+                    <span>
+                        Desenvolvi no próprio Pluginfo um site no formato static multipage com temática de uma comunidade de cachorros, e também desenvolvi esse site aqui, o qual me apresento.
+                    </span>
+                </p>
+                <div class="approval-container">
+                    <img class="verified" src="assets/images/verified.svg" alt="Selo de aprovação">
+                    <p class="approval-text">Disponível para conversa e troca de idéias – <a class="links-underline" href="https://wa.me/5571987881956" target="_blank">mande mensagem</a></p>
+                </div>
+            </section>
+            <section class="section3" id="section-3">
+                <div class="section-limiter" id="slbigger"></div>
+                <div class="title-sub">
+                    <h2 class="section-title">Coisas que eu gosto</h2>
+                    <p class="title-general">
+                        Aqui uma seção de coisas que eu gosto, para descontrair e também me conhecer mais a fundo.
+                    </p>
+                </div>
+                <div class="img-near-text1">
+                    <img class="site-image" src="assets/images/elianPhoto.jpeg" alt="Foto de João Gabriel e Elian">
+                    <div class="title-sub-but">
+                        <h4>Elian</h4>
+                        <p>
+                            Elian é minha namorada e uma pessoa que eu gosto muito. É graduanda em Serviço social na UFBA. Já me fez passar de várias fases ruins e hoje me sinto muito feliz com ela. S2
+                        </p>
+                        <button class="content-button" onclick="window.open('https://www.instagram.com/jurubeba.l/', '_blank')">Saiba mais</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section4" id="section-4">
+                <img class="site-image" src="assets/images/tobyPhoto.jpeg" alt="Imagem de Toby">
+                <div class="title-sub-but">
+                    <h4>Toby</h4>
+                    <p>
+                        Tobynho é meu cachorro que adotei faz 9 anos (quase 10), amo ele e o quanto ele já me ajudou a descontrair e passar os meus dias não foi pouco.
+                    </p>
+                    <button class="content-button" onclick="window.open('https://www.youtube.com/watch?v=EpX1_YJPGAY', '_blank')">Saiba mais</button>
+                </div>
+            </section>
+        </main>
+        <script src="script.js"></script>
+    </body>
+
+</html>

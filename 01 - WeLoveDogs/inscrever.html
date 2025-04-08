@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrição</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html">
+        <h1>
+          <span>we</span>
+          <span id="green-text">love</span>
+          <span>dogs</span>
+        </h1>
+      </a>
+      <nav>
+        <ul>
+          <li><a href="quem-somos.html">QUEM SOMOS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <button onclick="location.href='inscrever.html'" id="inscrever2-container">INSCREVER</button>
+        </ul>
+      </nav>
+    </header>
+    <main id="inscricao-main">
+      <h2>Inscrição</h2>
+      <div id="inscricao-container">
+        <form>
+          <div id="inputs-container">
+            <div class="input_with_text">
+              <h3>Nome</h3>
+              <input type="text" placeholder="Seu nome" />
+            </div>
+            <div class="input_with_text">
+              <h3>Idade</h3>
+
+              <input type="text" placeholder="18" />
+            </div>
+            <div class="input_with_text">
+              <h3>E-mail</h3>
+              <input type="text" placeholder="exemplo@exemplo" />
+            </div>
+            <div class="input_with_text">
+              <div>
+                <h3>Ama</h3>
+                <h3>cachorros?</h3>
+              </div>
+              <input id="long-input" type="text" placeholder="Mensagem" />
+            </div>
+            <button id="botao-enviar" onclick="location.href='inscrever.html'">Enviar</button>
+          </div>
+        </form>
+        <img src="assets-sites/Figure5.svg" alt="Imagem aconchegante apontando para o coração" />
+      </div>
+    </main>
+  </body>
+</html>
